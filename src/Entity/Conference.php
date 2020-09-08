@@ -44,6 +44,11 @@ class Conference
         $this->comment = new ArrayCollection();
     }
 
+    public function __toString()
+    {
+        return $this->city . " " . $this->year;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
