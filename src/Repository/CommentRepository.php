@@ -2,6 +2,7 @@
 
 namespace App\Repository;
 
+use Redis;
 use App\Entity\Comment;
 use App\Entity\Conference;
 use Doctrine\ORM\Tools\Pagination\Paginator;
