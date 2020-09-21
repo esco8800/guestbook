@@ -54,6 +54,11 @@ class Comment
      */
     private $photoFilename;
 
+    public function __toString()
+    {
+        return $this->author;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
